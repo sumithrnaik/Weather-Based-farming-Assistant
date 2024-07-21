@@ -1,0 +1,107 @@
+ <div class="container">
+        <h1>Crop Prediction</h1>
+        <form id="predictForm">
+            <label for="N">Nitrogen (N):</label>
+            <input type="number" id="N" name="N" required><br>
+            <label for="P">Phosphorus (P):</label>
+            <input type="number" id="P" name="P" required><br>
+            <label for="K">Potassium (K):</label>
+            <input type="number" id="K" name="K" required><br>
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" name="temperature" required><br>
+            <label for="humidity">Humidity (%):</label>
+            <input type="number" id="humidity" name="humidity" required><br>
+            <label for="ph">pH:</label>
+            <input type="number" id="ph" name="ph" step="0.01" required><br>
+            <label for="rainfall">Rainfall (mm):</label>
+            <input type="number" id="rainfall" name="rainfall" required><br>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8ffeb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 4px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+input {
+    padding: 8px;
+    margin-top: 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 0.8em;
+    }
+}
+main{
+  background-image: url('https://t3.ftcdn.net/jpg/05/02/18/64/360_F_502186443_Kubg3Wl76uE8BYl1tcAuYYXgGKAaO6r4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
